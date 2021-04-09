@@ -24,7 +24,7 @@
 .letter {
   animation: text-shadow forwards 5s ease;
   color: #487ee0;
-  font-size: 35em;
+  font-size: 30em;
   transition: all 0.2s ease;
   margin: 0;
 }
