@@ -30,8 +30,8 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-username: '${{ secrets.USERNAME }}'
-          ftp-server: '${{ secrets.SERVER }}'
-          ftp-password: '${{ secrets.PASSWORD }}'
+          username: '${{ secrets.USERNAME }}'
+          server: '${{ secrets.SERVER }}'
+          password: '${{ secrets.PASSWORD }}'
           local-dir: './build'
           server-dir: '/httpdocs/stk-media'
