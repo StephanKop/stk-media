@@ -30,8 +30,8 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          username: '${{ secrets.USERNAME }}'
-          server: '${{ secrets.SERVER }}'
-          local_path: './build/*'
-          remote_path: '/httpdocs/stk-media'
-          args: '-o ConnectTimeout=5'
+          ftp-username: '${{ secrets.USERNAME }}'
+          ftp-server: '${{ secrets.SERVER }}'
+          ftp-password: '${{ secrets.PASSWORD }}'
+          local-dir: './build'
+          server-dir: '/httpdocs/stk-media'
