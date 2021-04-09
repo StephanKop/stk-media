@@ -33,5 +33,5 @@ jobs:
           username: '${{ secrets.USERNAME }}'
           server: '${{ secrets.SERVER }}'
           password: '${{ secrets.PASSWORD }}'
-          local-dir: './build/*'
+          local-dir: './build/'
           server-dir: '/httpdocs/stk-media/'
