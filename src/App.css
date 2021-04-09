@@ -7,21 +7,14 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 2s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #487ee0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*font-size: calc(10px + 2vmin);*/
 }
 
 .App-link {
@@ -29,31 +22,38 @@
 }
 
 .letter {
-  animation: text-shadow infinite 10s ease;
-  color: #282c34;
-  font-size: 8em;
+  animation: text-shadow forwards 5s ease;
+  color: #487ee0;
+  font-size: 30em;
+  transition: all 0.2s ease;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  0% {
-    opacity: 0.5;
+@media only screen and (max-width: 600px) {
+  .letter {
+    font-size: 10em;
+    animation: text-shadow-2 forwards 5s ease;
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.5;
-  }
+}
+
+.letter:hover {
+  text-shadow: -60px 20px #244077;
 }
 
 @keyframes text-shadow {
   0% {
-    text-shadow: 0px 0px #282c34;
-  }
-  50% {
-    text-shadow: -10px -10px 10px #e9e9e9;
+    text-shadow: 0 0 #487ee0;
   }
   100% {
-    text-shadow: 0px 0px #282c34;
+    text-shadow: -20px 15px #244077;
+  }
+}
+
+@keyframes text-shadow-2 {
+  0% {
+    text-shadow: 0 0 #487ee0;
+  }
+  100% {
+    text-shadow: -10px 5px #244077;
   }
 }
