@@ -1,9 +1,19 @@
 @import '../utils/variables.scss';
 
+.cardTitle {
+  max-width: 1080px;
+  color: $blue;
+  margin: 3em auto 1em;
+  font-size: 2em;
+  @media (max-width: $mobile) {
+    padding-left: 0.7em;
+  }
+}
+
 .cardContainer {
   width: 100%;
   max-width: 1080px;
-  margin: 10em auto 10em auto;
+  margin: 1em auto 10em auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,15 +22,27 @@
     display: flex;
     flex-direction: column;
     width: 16em;
-    padding: 1em;
+    padding: 0 1em 0.25em 1em;
     border-radius: 8px;
     box-shadow: 0px 0px 10px -1px rgba(173,173,173,1);
     transition: all 0.2s ease;
     cursor: pointer;
-    margin: auto;
+    border: 3px solid transparent;
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 0 1.5em 2em 1.5em;
+    }
     &:hover {
       box-shadow: 0px 0px 15px -1px rgba(173,173,173,1);
       transform: translateY(-1em);
+      border: 3px solid $blue;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: $blue;
     }
   }
 }

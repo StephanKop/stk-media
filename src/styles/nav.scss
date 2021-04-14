@@ -1,8 +1,9 @@
+@import '../utils/variables.scss';
+
 .navContainer {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  background-color: #6d81e3;
+  background-color: $blue;
   &__nav {
     display: flex;
     flex-direction: row;
@@ -10,10 +11,12 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    //max-width: 1080px;
     color: white;
     h1 {
       padding-left: 1em;
+      @media (max-width: $mobile) {
+        font-size: 1.1em;
+      }
     }
     ul {
       padding-right: 1em;

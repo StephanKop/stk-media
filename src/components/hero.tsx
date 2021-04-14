@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 
 const Hero = () => {
     let i = 0;
-    const txt = 'Design, Development en UX?'; /* The text */
-    const speed = 50; /* The speed/duration of the effect in milliseconds */
+    let a = 0;
+    const txt = 'Design, Development en UX?';
+    const txt2 = 'Het is allemaal mogelijk!';
+    const speed = 50;
     const typeWriter = () => {
         if (i < txt.length) {
             const heading = document.getElementById('typewriter1');
@@ -22,9 +24,9 @@ const Hero = () => {
         <div className={'heroContainer'}>
         <div className={'heroContainer__hero'}>
             <div className={'heroContainer__hero__left'}>
-                <h1><span id={'typewriter1'}></span><span className={'caret'}>&nbsp;</span></h1>
+                <h2><span id={'typewriter1'}></span><span>&nbsp;</span></h2>
                 {/*<h1 id={'typewriter1'}>Design, Development en UX?</h1>*/}
-                <h2 id={'typewriter2'}>Het is allemaal mogelijk!<span>&nbsp;</span></h2>
+                <h2>Het is allemaal mogelijk!</h2>
             </div>
             <div className={'heroContainer__hero__right'}>
                 <img src={'/media/Black-2048x1346.png'} alt={'hero phone'}/>
