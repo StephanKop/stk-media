@@ -17,7 +17,7 @@ const Hero = () => {
 
     useEffect(() => {
         typeWriter();
-    }, [])
+    }, [typeWriter()])
     return (
         <div className={'heroContainer'}>
         <div className={'heroContainer__hero'}>

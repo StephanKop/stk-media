@@ -6,7 +6,7 @@
   &__hero {
     width: 100%;
     max-width: 1080px;
-    padding: 10% 1em 0 1em;
+    padding-top: 10%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +16,15 @@
       color: white;
       h1 {
         width: 100%;
+        @media (max-width: $mobile) {
+          padding-left: 1em;
+        }
+      }
+      h2 {
+        width: 100%;
+        @media (max-width: $mobile) {
+          padding-left: 1em;
+        }
       }
       .caret {
         animation: blink 1s step-end infinite;
