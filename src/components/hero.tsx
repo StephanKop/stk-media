@@ -17,7 +17,7 @@ const Hero = () => {
 
     useEffect(() => {
         typeWriter();
-    }, [typeWriter()])
+    })
     return (
         <div className={'heroContainer'}>
         <div className={'heroContainer__hero'}>
@@ -27,7 +27,7 @@ const Hero = () => {
                 <h2 id={'typewriter2'}>Het is allemaal mogelijk!<span>&nbsp;</span></h2>
             </div>
             <div className={'heroContainer__hero__right'}>
-                <img src={'/media/Black-2048x1346.png'}/>
+                <img src={'/media/Black-2048x1346.png'} alt={'hero image'}/>
             </div>
         </div>
         </div>
