@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 
 const Hero = () => {
     let i = 0;
-    let a = 0;
     const txt = 'Design, Development en UX?';
-    const txt2 = 'Het is allemaal mogelijk!';
     const speed = 50;
     const typeWriter = () => {
         if (i < txt.length) {
