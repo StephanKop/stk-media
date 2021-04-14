@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Card 1",
+    "img": "https://i.imgur.com/DpTHKb9.jpg",
+    "description": "this is the description"
+  },
+  {
+    "name": "Card 2",
+    "img": "https://i.imgur.com/DpTHKb9.jpg",
+    "description": "this is the description"
+  },
+  {
+    "name": "Card 3",
+    "img": "https://i.imgur.com/DpTHKb9.jpg",
+    "description": "this is the description"
+  }
+]

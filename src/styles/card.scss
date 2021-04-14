@@ -1,0 +1,26 @@
+@import '../utils/variables.scss';
+
+.cardContainer {
+  width: 100%;
+  max-width: 1080px;
+  margin: 10em auto 10em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(173,173,173,1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: auto;
+    &:hover {
+      box-shadow: 0px 0px 15px -1px rgba(173,173,173,1);
+      transform: translateY(-1em);
+    }
+  }
+}
