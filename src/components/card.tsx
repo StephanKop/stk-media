@@ -13,7 +13,7 @@ const Card = () => {
                     <article className={'cardContainer__card'} key={index}>
                         <Link to={cardData.link}>
                             <h3>{cardData.name}</h3>
-                            <img src={cardData.img} alt={'card'}/>
+                            <img src={cardData.img}/>
                             <p>{cardData.description}</p>
                         </Link>
                     </article>

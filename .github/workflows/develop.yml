@@ -26,6 +26,8 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
+        env:
+          CI: false
 
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.0.0

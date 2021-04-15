@@ -33,6 +33,8 @@
         }
       }
       .caret {
+        margin-left: 0.5rem;
+        font-size: 1.5em;
         animation: blink 1s step-end infinite;
         border-left: 2px solid white;
       }

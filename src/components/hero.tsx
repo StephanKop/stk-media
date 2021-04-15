@@ -22,7 +22,7 @@ const Hero = () => {
         <div className={'heroContainer'}>
         <div className={'heroContainer__hero'}>
             <div className={'heroContainer__hero__left'}>
-                <h2><span id={'typewriter1'}></span><span>&nbsp;</span></h2>
+                <h2><span id={'typewriter1'}></span><span className={'caret'}>&nbsp;</span></h2>
                 {/*<h1 id={'typewriter1'}>Design, Development en UX?</h1>*/}
                 <h2>Het is allemaal mogelijk!</h2>
             </div>
