@@ -1,20 +1,20 @@
 [
   {
     "name": "Frontend Development",
-    "img": "https://i.imgur.com/DpTHKb9.jpg",
-    "description": "this is the description",
+    "img": "/media/code.svg",
+    "description": "De frontend is het gezicht van je website.",
     "link": "/contact"
   },
   {
     "name": "Web Design",
-    "img": "https://i.imgur.com/DpTHKb9.jpg",
-    "description": "this is the description",
+    "img": "/media/layers.svg",
+    "description": "Jouw gloednieuwe website moet natuurlijk wel in een mooi jasje!",
     "link": "/contact"
   },
   {
     "name": "UX",
-    "img": "https://i.imgur.com/DpTHKb9.jpg",
-    "description": "this is the description",
+    "img": "/media/tap.svg",
+    "description": "Een goede User Experience maakt of kraakt een website.",
     "link": "/contact"
   }
 ]

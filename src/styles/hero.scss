@@ -3,6 +3,8 @@
 .heroContainer {
   height: 50vh;
   background-color: $blue;
+  background-position: bottom;
+  background-repeat: no-repeat;
   &__hero {
     width: 100%;
     max-width: 1080px;
@@ -49,11 +51,17 @@
       }
       img {
         object-fit: cover;
-        object-position: 30%;
+        //object-position: 50%;
         width: 100%;
-        height: 50vh;
+        padding-top: 3em;
+        height: 35em;
         animation: fade-from-right 1s ease;
+        transition: all 0.2s ease;
+        cursor: pointer;
         @media (max-width: $mobile) {
+          padding-top: 0;
+          object-position: 30%;
+          object-fit: contain;
           width: 100%;
           margin-left: 7em;
           height: 15em;
@@ -75,11 +83,11 @@
 
 @keyframes fade-from-right {
   from {
-    opacity: 0;
+    //opacity: 0;
     transform: translateX(5em);
   }
   to {
-    opacity: 1;
+    //opacity: 1;
     transform: translateX(0em);
   }
 }

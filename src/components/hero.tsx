@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     let i = 0;
@@ -27,7 +28,9 @@ const Hero = () => {
                 <h2>Het is allemaal mogelijk!</h2>
             </div>
             <div className={'heroContainer__hero__right'}>
-                <img src={'/media/Black-2048x1346.png'} alt={'hero phone'}/>
+                <Link to={'/contact'}>
+                    <img src={'/media/hero3.png'} alt={'hero phone'}/>
+                </Link>
             </div>
         </div>
         </div>
