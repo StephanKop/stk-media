@@ -5,12 +5,18 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Burger from "./burger";
 import Home from "./pageHome";
-// import "../styles/nav.scss";
 
 const Nav = () => {
+    const windowWidth = window.innerHeight;
+    const isMobile = windowWidth < 900;
     return (
         <Router>
+            {isMobile && (
+                <Burger/>
+            )}
+            {!isMobile && (
             <div className={'navContainer'}>
                 <nav className={'navContainer__nav'}>
                     <h1>STK Media</h1>
@@ -27,6 +33,7 @@ const Nav = () => {
                     </ul>
                 </nav>
             </div>
+            )}
             <Switch>
                 <Route path="/contact">
                     <h1>Contact</h1>
