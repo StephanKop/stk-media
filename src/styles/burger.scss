@@ -7,6 +7,9 @@
   top: 0;
   justify-content: space-between;
   overflow: hidden;
+  a {
+    text-decoration: none;
+  }
   button {
     z-index: 2;
     width: 6em;

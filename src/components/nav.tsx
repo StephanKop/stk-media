@@ -3,14 +3,19 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    NavLink
 } from "react-router-dom";
 import Burger from "./burger";
 import Home from "./pages/pageHome";
+import Frontend from "./pages/pageFrontend";
+import Design from "./pages/pageWebDesign";
+import UX from "./pages/pageUX";
+import Contact from "./pages/pageContact";
 
 const Nav = () => {
-    const windowWidth = window.innerHeight;
-    const isMobile = windowWidth < 900;
+    const windowWidth = window.innerWidth;
+    const isMobile = windowWidth < 700;
     return (
         <Router>
             {isMobile && (
@@ -19,27 +24,41 @@ const Nav = () => {
             {!isMobile && (
             <div className={'navContainer'}>
                 <nav className={'navContainer__nav'}>
-                    <h1>STK<span>Media</span></h1>
+                    <Link to={'/'}>
+                        <h1>STK<span>Media</span></h1>
+                    </Link>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/frontend" activeClassName='is-active'>Frontend</NavLink>
                         </li>
                         <li>
-                            <Link to="/diensten">Diensten</Link>
+                            <NavLink to="/webdesign" activeClassName='is-active'>Webdesign</NavLink>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <NavLink to="/ux" activeClassName='is-active'>UX</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact" activeClassName='is-active'>Contact</NavLink>
                         </li>
                     </ul>
                 </nav>
             </div>
             )}
             <Switch>
-                <Route path="/contact">
-                    <h1>Contact</h1>
-                </Route>
                 <Route path="/diensten">
                     <h1>Diensten</h1>
+                </Route>
+                <Route path="/frontend">
+                    <Frontend/>
+                </Route>
+                <Route path="/webdesign">
+                    <Design/>
+                </Route>
+                <Route path="/ux">
+                    <UX/>
+                </Route>
+                <Route path="/contact">
+                    <Contact/>
                 </Route>
                 <Route path="/">
                     <Home/>

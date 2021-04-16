@@ -7,7 +7,11 @@ const Home = () => {
 
     return (
         <>
-            <Hero/>
+            <Hero
+                typewriterTitle={'Design, Development en UX?'}
+                subtitle={'Het is allemaal mogelijk!'}
+                backgroundImage={'https://i.imgur.com/bZp6pgw.jpeg'}
+                heroImg={'hero3.png'}/>
             <Card/>
             <Footer/>
         </>

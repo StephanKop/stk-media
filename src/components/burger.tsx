@@ -15,7 +15,9 @@ const Burger = () => {
 
     return (
             <div className={'burgerContainer'}>
-                <h1>STK<span>Media</span></h1>
+                <Link to={'/'}>
+                    <h1>STK<span>Media</span></h1>
+                </Link>
                 <button onClick={toggleMenu}>
                     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <line x1="30" y1="25" x2="90" y2="25" stroke="white" strokeWidth="7" strokeLinecap="round" className={`${isMenuOpen ? "rotated-top" : ""}`}/>
@@ -24,13 +26,18 @@ const Burger = () => {
                     </svg>
                 </button>
                 <nav className={`nav ${isMenuOpen ? "openMenu" : ""}${!isMenuOpen && loaded ? "closeMenu" : ""}`}>
-                    <h1>STK<span>Media</span></h1>
+                    <Link to={'/'} onClick={toggleMenu}>
+                        <h1>STK<span>Media</span></h1>
+                    </Link>
                     <ul>
                         <li>
-                            <Link to="/" onClick={toggleMenu}>Home</Link>
+                            <Link to="/frontend" onClick={toggleMenu}>Frontend</Link>
                         </li>
                         <li>
-                            <Link to="/diensten" onClick={toggleMenu}>Diensten</Link>
+                            <Link to="/webdesign" onClick={toggleMenu}>Webdesign</Link>
+                        </li>
+                        <li>
+                            <Link to="/ux" onClick={toggleMenu}>UX</Link>
                         </li>
                         <li>
                             <Link to="/contact" onClick={toggleMenu}>Contact</Link>

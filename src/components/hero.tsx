@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-const Hero = () => {
+const Hero = ( props: any ) => {
     let i = 0;
-    const txt = 'Design, Development en UX?';
+    const txt = props.typewriterTitle;
     const speed = 50;
     const typeWriter = () => {
         if (i < txt.length) {
@@ -20,16 +20,16 @@ const Hero = () => {
         typeWriter();
     })
     return (
-        <div className={'heroContainer'}>
+        <div className={'heroContainer'} style={{backgroundImage: `url(${props.backgroundImage})`}}>
         <div className={'heroContainer__hero'}>
             <div className={'heroContainer__hero__left'}>
-                <h2><span id={'typewriter1'}></span><span className={'caret'}>&nbsp;</span></h2>
+                <h2><span id={'typewriter1'}/><span className={'caret'}>&nbsp;</span></h2>
                 {/*<h1 id={'typewriter1'}>Design, Development en UX?</h1>*/}
-                <h2>Het is allemaal mogelijk!</h2>
+                <h2>{props.subtitle}</h2>
             </div>
-            <div className={'heroContainer__hero__right'}>
+            <div className={'heroContainer__hero__right'} style={{display: props.display}}>
                 <Link to={'/contact'}>
-                    <img src={'/media/hero3.png'} alt={'hero phone'}/>
+                    <img src={`/media/${props.heroImg}`} alt={'hero phone'}/>
                 </Link>
             </div>
         </div>

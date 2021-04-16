@@ -3,13 +3,13 @@
     "name": "Frontend Development",
     "img": "/media/code.svg",
     "description": "De frontend is het gezicht van je website.",
-    "link": "/contact"
+    "link": "/frontend"
   },
   {
     "name": "Web Design",
     "img": "/media/layers.svg",
     "description": "Jouw gloednieuwe website moet natuurlijk wel in een mooi jasje!",
-    "link": "/contact"
+    "link": "/webdesign"
   },
   {
     "name": "UX",

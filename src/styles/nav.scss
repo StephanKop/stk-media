@@ -14,14 +14,25 @@
     margin-right: auto;
     width: 100%;
     color: white;
-    h1 {
-      padding-left: 1em;
-      font-style: italic;
-      span {
-        font-weight: 300;
+    .is-active {
+      border-bottom: 2px white solid;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $blue;
       }
-      @media (max-width: $mobile) {
-        font-size: 1.1em;
+      h1 {
+        padding-left: 1em;
+        font-style: italic;
+        span {
+          font-weight: 300;
+        }
+        @media (max-width: $mobile) {
+          font-size: 1.1em;
+        }
       }
     }
     ul {
