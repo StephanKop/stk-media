@@ -6,7 +6,7 @@ import {
     Link
 } from "react-router-dom";
 import Burger from "./burger";
-import Home from "./pageHome";
+import Home from "./pages/pageHome";
 
 const Nav = () => {
     const windowWidth = window.innerHeight;
@@ -19,7 +19,7 @@ const Nav = () => {
             {!isMobile && (
             <div className={'navContainer'}>
                 <nav className={'navContainer__nav'}>
-                    <h1>STK Media</h1>
+                    <h1>STK<span>Media</span></h1>
                     <ul>
                         <li>
                             <Link to="/">Home</Link>

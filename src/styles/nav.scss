@@ -3,7 +3,9 @@
 .navContainer {
   display: flex;
   flex-direction: column;
-  background-color: $blue;
+  position: absolute;
+  width: 100%;
+  top: 0;
   &__nav {
     display: flex;
     flex-direction: row;
@@ -14,6 +16,10 @@
     color: white;
     h1 {
       padding-left: 1em;
+      font-style: italic;
+      span {
+        font-weight: 300;
+      }
       @media (max-width: $mobile) {
         font-size: 1.1em;
       }

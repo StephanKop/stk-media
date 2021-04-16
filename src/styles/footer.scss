@@ -1,0 +1,41 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: $gray;
+  border-top: 4px solid $blue;
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    &__block {
+      display: flex;
+      flex-direction: column;
+      color: $offwhite;
+      margin-bottom: 1em;
+      width: 10em;
+      padding: 1em;
+      @media (max-width: $mobile) {
+        width: 9em;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  &__privacy {
+    margin: auto;
+    color: $offwhite;
+    width: 100%;
+    max-width: 1080px;
+    padding: 1em 1em 1em 3em;
+    @media (max-width: $mobile) {
+      padding: 0 0 0 1em;
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
