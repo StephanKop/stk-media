@@ -1,0 +1,35 @@
+.showcaseContainer {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //box-shadow: inset 0 0 300px $blue;
+  //background-image: linear-gradient(45deg, rgba(108, 128, 227, 0.5) 30%, rgba(255, 255, 255, 0.0));
+  transition: all 0.2s ease;
+  &:hover {
+    //box-shadow: inset 0 0 100px $blue;
+    //background: linear-gradient(130deg, rgba(108, 128, 227, 0.3) 0%, rgba(255, 255, 255, 0.0)) !important;
+    @media (max-width: $mobile) {
+      box-shadow: none;
+    }
+  }
+  &__text {
+    width: 30%;
+    padding: 1.5em;
+    h3 {
+      color: white;
+      max-width: 1080px;
+      margin: auto auto 0 0;
+      font-size: 2em;
+      font-style: italic;
+    }
+    p {
+      color: white;
+      font-style: italic;
+      font-size: 1.3em;
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+  }
+}

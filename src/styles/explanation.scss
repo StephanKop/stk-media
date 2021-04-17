@@ -1,0 +1,37 @@
+.explanationContainer {
+  width: 100%;
+  max-width: 1080px;
+  margin: 5em auto 5em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: $mobile) {
+    margin: 3em auto 3em auto;
+  }
+  h2 {
+    color: $blue;
+    font-style: italic;
+    font-size: 2em;
+    @media (max-width: $mobile) {
+      padding: 0 0.75em;
+      margin: 2em 0 0 0;
+    }
+  }
+  &__paragraphs {
+    width: 30em;
+    margin-top: 1.5em;
+    @media (max-width: $mobile) {
+      margin-top: 0;
+      padding: 1.5em;
+    }
+    p {
+      color: $blue;
+      font-style: italic;
+      font-size: 1.2em;
+      @media (max-width: $mobile) {
+        margin: 0 0 1em 0;
+      }
+    }
+  }
+}
