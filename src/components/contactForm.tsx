@@ -4,7 +4,7 @@ const ContactForm = () => {
 
     return (
         <div className={'contactFormContainer'}>
-            <form action={'../utils/contactform.php'} method={'POST'}>
+            <form action={'/contactform.php'} method={'POST'}>
                 <input type={'text'} name={'name'} placeholder={'Naam'}/>
                 <input type={'email'} name={'email'} placeholder={'Email'}/>
                 <input type={'text'} name={'subject'} placeholder={'Onderwerp'}/>

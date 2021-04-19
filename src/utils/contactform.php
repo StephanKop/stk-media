@@ -2,7 +2,7 @@
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $mailFrom = "stephan9666@hotmail.com";
+    $mailFrom = "info@stk-media.nl";
     $mailSend = $_POST['email'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
@@ -12,5 +12,5 @@ if (isset($_POST['submit'])) {
     $txt = "You have received an e-mail from ".$name.".\n\n".$mailSend.".\n\n".$message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: contact.html?mailsend");
+//     header("Location: contact.html?mailsend");
 }
