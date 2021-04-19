@@ -13,4 +13,5 @@ if (isset($_POST['submit'])) {
 
     mail($mailTo, $subject, $txt, $headers);
     header("Location: /contact");
+    var_dump(mail);
 }
