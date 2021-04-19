@@ -11,7 +11,6 @@ if (isset($_POST['submit'])) {
     $headers = "From: ".$mailFrom;
     $txt = "You have received an e-mail from ".$name.".\n\n".$mailSend.".\n\n".$message;
 
-    mail($mailTo, $subject, $txt, $headers);
+    mail($mailTo, $subject, $txt, $headers, "-f".$mailSend);
     header("Location: /contact");
-    var_dump(mail);
 }

@@ -10,7 +10,7 @@ const UX = () => {
                 typewriterTitle={'User experience design'}
                 subtitle={'De gebruiker de best mogelijke ervaring geven!'}
                 heroImg={'hero3.png'}
-                backgroundImage={'https://i.imgur.com/OwjRGL3.jpeg'}/>
+                backgroundImage={'https://i.imgur.com/El9bQ3r.jpg'}/>
             <Explanation
                 title={'User experience design'}
                 p1={'Ontzettend leuk, zo`n gloednieuwe strak ontworpen website, maar wanneer de gebruikers er een slechte ervaring mee hebben heb jij er ook niks aan.'}

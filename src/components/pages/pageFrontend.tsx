@@ -4,6 +4,7 @@ import Explanation from "../explanation";
 import Footer from "../footer";
 import ShowCase from "../product_showcase";
 import TitleDivider from "../titleDivider";
+import ContactForm from "../contactForm";
 
 const Frontend = () => {
     return (
@@ -12,7 +13,7 @@ const Frontend = () => {
                 typewriterTitle={'Frontend development'}
                 subtitle={'Het gezicht van je website moet wel goed in elkaar zitten!'}
                 heroImg={'hero3.png'}
-                backgroundImage={'https://i.imgur.com/SQGV5wb.jpeg'}/>
+                backgroundImage={'https://i.imgur.com/OfmcaDB.jpg'}/>
             <Explanation
                 title={'Frontend development'}
                 p1={'De frontend is de basis van een succesvolle website of app. Dit is namelijk het gedeelte van je website waar gebruikers echt interactie mee hebben. Het "gezicht" van je website.'}
@@ -22,7 +23,8 @@ const Frontend = () => {
                 title={'Gillz developer dashboard'}
                 backgroundImage={'/media/gillz.png'}
                 description={'Een dashboard dat situational awareness verhoogt bij developers. Het Dashboard is geschreven in React Typescript en maakt gebruik van de Zendesk en Azure DevOps Api`s.'}/>
-            <TitleDivider title={'Iets interessants gezien?'}/>
+            {/*<TitleDivider title={'Iets interessants gezien?'}/>*/}
+            {/*<ContactForm/>*/}
             <Footer/>
         </>
     )

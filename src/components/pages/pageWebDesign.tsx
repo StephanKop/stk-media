@@ -11,7 +11,7 @@ const Design = () => {
                 typewriterTitle={'Web design'}
                 subtitle={'Voor websites, apps een nieuwe huisstijl of andere media.'}
                 heroImg={'hero3.png'}
-                backgroundImage={'https://i.imgur.com/jACo7p0.jpeg'}/>
+                backgroundImage={'https://i.imgur.com/Noqz5af.jpg'}/>
             <Explanation
                 title={'Digitale media'}
                 p1={'Web design staat tegenwoordig centraal op het internet.'}
