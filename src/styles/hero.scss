@@ -9,6 +9,9 @@
   background-position: 70% 50%;
   background-size: cover;
   background-blend-mode: soft-light;
+  @media (max-width: $mobile) {
+    height: 28em;
+  }
   &__hero {
     width: 100%;
     max-width: 1080px;

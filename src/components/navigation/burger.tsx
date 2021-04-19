@@ -14,7 +14,7 @@ const Burger = () => {
     };
 
     return (
-            <div className={'burgerContainer'}>
+            <header className={'burgerContainer'}>
                 <Link to={'/'}>
                     <h1>STK<span>Media</span></h1>
                 </Link>
@@ -31,7 +31,7 @@ const Burger = () => {
                     </Link>
                     <ul>
                         <li>
-                            <Link to="/frontend" onClick={toggleMenu}>Frontend</Link>
+                            <Link to="/development" onClick={toggleMenu}>Development</Link>
                         </li>
                         <li>
                             <Link to="/webdesign" onClick={toggleMenu}>Webdesign</Link>
@@ -44,7 +44,7 @@ const Burger = () => {
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </header>
     )
 }
 

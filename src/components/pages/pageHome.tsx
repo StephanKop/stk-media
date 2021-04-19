@@ -10,7 +10,7 @@ const Home = () => {
             <Hero
                 typewriterTitle={'Design, Development en UX?'}
                 subtitle={'Het is allemaal mogelijk!'}
-                backgroundImage={'https://i.imgur.com/bZp6pgw.jpeg'}
+                backgroundImage={'https://i.imgur.com/1MXDJYi.jpeg'}
                 heroImg={'hero3.png'}/>
             <Card/>
             <Footer/>

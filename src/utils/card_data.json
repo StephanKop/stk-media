@@ -3,7 +3,7 @@
     "name": "Frontend Development",
     "img": "/media/code.svg",
     "description": "De frontend is het gezicht van je website.",
-    "link": "/frontend"
+    "link": "/development"
   },
   {
     "name": "Web Design",
@@ -15,6 +15,6 @@
     "name": "UX",
     "img": "/media/tap.svg",
     "description": "Een goede User Experience maakt of kraakt een website.",
-    "link": "/contact"
+    "link": "/ux"
   }
 ]

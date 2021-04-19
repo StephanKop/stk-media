@@ -24,7 +24,6 @@ const Hero = ( props: any ) => {
         <div className={'heroContainer__hero'}>
             <div className={'heroContainer__hero__left'}>
                 <h2><span id={'typewriter1'}/><span className={'caret'}>&nbsp;</span></h2>
-                {/*<h1 id={'typewriter1'}>Design, Development en UX?</h1>*/}
                 <h2>{props.subtitle}</h2>
             </div>
             <div className={'heroContainer__hero__right'} style={{display: props.display}}>

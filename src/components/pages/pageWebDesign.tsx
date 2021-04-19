@@ -11,7 +11,7 @@ const Design = () => {
                 typewriterTitle={'Web design'}
                 subtitle={'Voor websites, apps een nieuwe huisstijl of andere media.'}
                 heroImg={'hero3.png'}
-                backgroundImage={'https://i.imgur.com/8I0dQHC.jpeg'}/>
+                backgroundImage={'https://i.imgur.com/jACo7p0.jpeg'}/>
             <Explanation
                 title={'Digitale media'}
                 p1={'Web design staat tegenwoordig centraal op het internet.'}
@@ -21,6 +21,10 @@ const Design = () => {
                 title={'Wuppermann maandelijkse nieuwsbrief'}
                 backgroundImage={'/media/wuppermann_cover.png'}
                 description={'Een compleet nieuwe interne nieuwsbrief'}/>
+            <ShowCase
+                title={'Volcanos gray website'}
+                backgroundImage={'/media/volcanos.png'}
+                description={'Een website ontworpen gebaseerd op de kleur grijs'}/>
             <ShowCase
                 title={'Brochure dierentuin'}
                 backgroundImage={'/media/page1.png'}

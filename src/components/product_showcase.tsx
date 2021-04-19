@@ -5,7 +5,7 @@ const ShowCase = (props: any) => {
     const styles = {
         background: {
             backgroundImage: `linear-gradient(130deg, rgba(108, 128, 227, 0.9) 10%, rgba(255, 255, 255, 0.0)), url(${props.backgroundImage})`,
-            ':hover': {
+            '&:hover': {
                 backgroundImage: `linear-gradient(130deg, rgba(108, 128, 227, 0.5) 0%, rgba(255, 255, 255, 0.0)), url(${props.backgroundImage})`,
             },
         },

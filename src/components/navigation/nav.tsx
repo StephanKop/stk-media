@@ -4,7 +4,7 @@ import {
     Switch,
     Route,
     Link,
-    NavLink
+    NavLink,
 } from "react-router-dom";
 import Burger from "./burger";
 import Home from "../pages/pageHome";
@@ -29,7 +29,7 @@ const Nav = () => {
                     </Link>
                     <ul>
                         <li>
-                            <NavLink to="/frontend" activeClassName='is-active'>Frontend</NavLink>
+                            <NavLink to="/development" activeClassName='is-active'>Development</NavLink>
                         </li>
                         <li>
                             <NavLink to="/webdesign" activeClassName='is-active'>Webdesign</NavLink>
@@ -46,10 +46,11 @@ const Nav = () => {
             )}
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/frontend" component={Frontend}/>
+                <Route path="/development" component={Frontend}/>
                 <Route path="/webdesign" component={Design}/>
                 <Route path="/ux" component={UX}/>
                 <Route path="/contact" component={Contact}/>
+                <Route component={Home}/>
             </Switch>
         </Router>
     )
