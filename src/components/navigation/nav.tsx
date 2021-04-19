@@ -45,24 +45,11 @@ const Nav = () => {
             </div>
             )}
             <Switch>
-                <Route path="/diensten">
-                    <h1>Diensten</h1>
-                </Route>
-                <Route path="/frontend">
-                    <Frontend/>
-                </Route>
-                <Route path="/webdesign">
-                    <Design/>
-                </Route>
-                <Route path="/ux">
-                    <UX/>
-                </Route>
-                <Route path="/contact">
-                    <Contact/>
-                </Route>
-                <Route path="/">
-                    <Home/>
-                </Route>
+                <Route exact path="/" component={Home}/>
+                <Route path="/frontend" component={Frontend}/>
+                <Route path="/webdesign" component={Design}/>
+                <Route path="/ux" component={UX}/>
+                <Route path="/contact" component={Contact}/>
             </Switch>
         </Router>
     )
