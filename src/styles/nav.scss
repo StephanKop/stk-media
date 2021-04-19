@@ -1,0 +1,53 @@
+@import '../utils/variables.scss';
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: white;
+    .is-active {
+      border-bottom: 2px white solid;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s ease;
+      padding-bottom: 0.25rem;
+      &:hover {
+        color: $blue;
+      }
+      h1 {
+        padding-left: 1em;
+        font-style: italic;
+        span {
+          font-weight: 300;
+        }
+        @media (max-width: $mobile) {
+          font-size: 1.1em;
+        }
+      }
+    }
+    ul {
+      padding-right: 1em;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      li {
+        margin-right: 1em;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

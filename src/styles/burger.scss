@@ -1,0 +1,115 @@
+@import '../utils/variables.scss';
+
+.burgerContainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+  }
+  button {
+    z-index: 2;
+    width: 6em;
+    height: 6em;
+    background: none;
+    border: none;
+    color: inherit;
+    outline: none;
+    position: fixed;
+    right: 0;
+    svg {
+      transition: all 0.5s ease;
+      line {
+        transition: all 0.5s ease;
+        transform-origin: center;
+      }
+    }
+  }
+  h1 {
+    font-size: 1.5em;
+    padding-left: 1.5rem;
+    padding-top: 0.4rem;
+    color: white;
+    font-style: italic;
+    span {
+      font-weight: 300;
+    }
+  }
+  .nav {
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    background-color: white;
+    height: 100%;
+    transform: translate(100%, 0);
+    z-index: 1;
+    overflow: hidden;
+    h1 {
+      color: $blue;
+    }
+    ul {
+      margin-top: 2em;
+      padding-left: 1em;
+      li {
+        list-style: none;
+        margin-bottom: 2rem;
+        a {
+          text-decoration: none;
+          color: $blue;
+          font-size: 3em;
+          font-weight: 700;
+          border-bottom: 3px solid $blue;
+        }
+      }
+    }
+  }
+}
+
+.openMenu {
+  animation: openNav 0.5s forwards ease;
+}
+
+.closeMenu {
+  animation: closeNav 0.5s forwards ease;
+}
+
+.rotated-bottom {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(-5px, -25px);
+  stroke: $blue;
+}
+
+.rotated-top {
+  transform: rotate(45deg) translate(-10px, 20px);
+  stroke: $blue;
+}
+
+.cross-fade-right {
+  transform: translateX(100px);
+  stroke: $blue;
+}
+
+.cross {
+  margin-top: -5px;
+}
+
+@keyframes openNav {
+  from {
+    transform: translate(100%, 0);
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes closeNav {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100%,0);
+  }
+}

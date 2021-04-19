@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import './utils/import.scss'
+import Nav from './components/navigation/nav'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="letter">STK</p>
-      </header>
+        <Nav/>
     </div>
   );
 }
