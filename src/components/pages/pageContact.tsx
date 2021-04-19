@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from "../hero";
 import ContactForm from "../contactForm";
 import Footer from "../footer";
-import TitleDivider from "../titleDivider";
 
 const Contact = () => {
     return (

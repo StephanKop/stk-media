@@ -3,8 +3,6 @@ import Hero from "../hero";
 import Explanation from "../explanation";
 import Footer from "../footer";
 import ShowCase from "../product_showcase";
-import TitleDivider from "../titleDivider";
-import ContactForm from "../contactForm";
 
 const Frontend = () => {
     return (
@@ -23,8 +21,6 @@ const Frontend = () => {
                 title={'Gillz developer dashboard'}
                 backgroundImage={'/media/gillz.png'}
                 description={'Een dashboard dat situational awareness verhoogt bij developers. Het Dashboard is geschreven in React Typescript en maakt gebruik van de Zendesk en Azure DevOps Api`s.'}/>
-            {/*<TitleDivider title={'Iets interessants gezien?'}/>*/}
-            {/*<ContactForm/>*/}
             <Footer/>
         </>
     )

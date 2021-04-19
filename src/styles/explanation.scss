@@ -6,7 +6,11 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: $desktop) {
+    padding: 0 1.5em 0 1.5em;
+  }
   @media (max-width: $mobile) {
+    padding: 0;
     margin: 3em auto 3em auto;
   }
   h2 {

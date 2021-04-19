@@ -5,6 +5,12 @@
   width: 100%;
   max-width: 1080px;
   flex-wrap: wrap;
+  @media (max-width: $desktop) {
+    padding: 0 1.5em 0 1.5em;
+  }
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
   &__text {
     color: $blue;
     width: 40%;
