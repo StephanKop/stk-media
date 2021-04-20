@@ -19,7 +19,7 @@ const Home = () => {
             <ShowCase
                 title={'Wuppermann maandelijkse nieuwsbrief'}
                 backgroundImage={'/media/wuppermann_cover.png'}
-                description={'Een compleet nieuwe interne nieuwsbrief'}/>
+                description={'WSN wilde graag een nieuw ontwerp van hun interne nieuwsbrief. De nieuwsbrief wordt organisatie breed gelezen dus een goed gebalanceerde style tussen speels en professioneel was belangrijk.'}/>
             <ShowCase
                 title={'Gillz developer dashboard'}
                 backgroundImage={'/media/gillz.png'}

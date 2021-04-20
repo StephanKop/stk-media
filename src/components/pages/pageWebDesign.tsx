@@ -20,15 +20,15 @@ const Design = () => {
             <ShowCase
                 title={'Wuppermann maandelijkse nieuwsbrief'}
                 backgroundImage={'/media/wuppermann_cover.png'}
-                description={'Een compleet nieuwe interne nieuwsbrief'}/>
+                description={'WSN wilde graag een nieuw ontwerp van hun interne nieuwsbrief. De nieuwsbrief wordt organisatie breed gelezen dus een goed gebalanceerde style tussen speels en professioneel was belangrijk.'}/>
             <ShowCase
                 title={'Volcanos gray website'}
                 backgroundImage={'/media/volcanos.png'}
-                description={'Een website ontworpen gebaseerd op de kleur grijs'}/>
+                description={'Een website ontworpen gebaseerd op basis van de kleur grijs, de uitdaging zat voornamelijk om de website niet "saai" te laten ogen. Hiervoor heb ik gebruik gemaakt van krachtige beelden.'}/>
             <ShowCase
                 title={'Brochure dierentuin'}
                 backgroundImage={'/media/page1.png'}
-                description={'Een fictieve opdracht voor een dierentuin'}/>
+                description={'Een fictieve opdracht voor een dierentuin die een nieuw ontworpen borchure wilden die bij de ingang uitgedeeld konden worden met geschiedenis over het park en leuke dieren weetjes.'}/>
             <Footer/>
         </>
     )
