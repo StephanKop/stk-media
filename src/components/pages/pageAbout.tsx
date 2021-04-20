@@ -2,8 +2,6 @@ import React from 'react';
 import Hero from "../hero";
 import AboutExplanation from "../aboutExplanation";
 import Footer from "../footer";
-import TitleDivider from "../titleDivider";
-import ContactForm from "../contactForm";
 
 const About = () => {
     return (
@@ -18,7 +16,6 @@ const About = () => {
                 p2={'Al heel mijn leven ben ik geïnteresseerd in media en techniek, daarom heb ik een vakgebied gezocht waar ik deze interesses kon combineren. Ik noem mijzelf nu ook Frontend developer met een grote voorliefde voor design.'}
                 p3={'In mijn vrije tijd ben ik een groot liefhebber van film en fotografie en ben ik regelmatig op de tennisbaan te vinden. Mocht je me dus even niet kunnen bereiken, dan ben ik waarschijnlijk iemand aan het inmaken op de tennisbaan!'}
             />
-            {/*<ContactForm/>*/}
             <Footer/>
         </div>
     )

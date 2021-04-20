@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { Link } from "react-router-dom";
 
 const Hero = ( props: any ) => {
-    const [istyped, setIsTyped] = useState(false);
     let i = 0;
     const txt = props.typewriterTitle;
     const speed = 50;
