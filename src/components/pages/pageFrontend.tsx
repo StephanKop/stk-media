@@ -21,6 +21,10 @@ const Frontend = () => {
                 title={'Gillz developer dashboard'}
                 backgroundImage={'/media/gillz.png'}
                 description={'Een dashboard dat situational awareness verhoogt bij developers. Het Dashboard is geschreven in React Typescript en maakt gebruik van de Zendesk en Azure DevOps Api`s.'}/>
+            <ShowCase
+                title={'F1 leaderboard app'}
+                backgroundImage={'/media/f1.png'}
+                description={'Een app ontwikkeld in React Native om gemakkelijk een time trials competitie te starten met je vrienden in de formule 1 games. Vul hier na je snelste tijd je gegevens in en bekijk waar je ranked op het leaderboard per circuit!'}/>
             <Footer/>
         </>
     )

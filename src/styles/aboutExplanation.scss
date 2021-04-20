@@ -1,0 +1,35 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1080px;
+  margin: 10em auto;
+  @media (max-width: $mobile) {
+    margin: 5em auto;
+  }
+  img {
+    width: 27em;
+    height: 27em;
+    border-radius: 30px;
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+  &__text {
+    color: $blue;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 0 1em 0 4em;
+    width: 50%;
+    @media (max-width: $mobile) {
+      width: 90%;
+      padding: 1em;
+    }
+    p {
+      margin: 0 auto 1em auto;
+    }
+  }
+}

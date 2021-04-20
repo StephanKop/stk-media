@@ -40,6 +40,9 @@ const Burger = () => {
                             <Link to="/ux" onClick={toggleMenu}>UX</Link>
                         </li>
                         <li>
+                            <Link to="/over" onClick={toggleMenu}>Over</Link>
+                        </li>
+                        <li>
                             <Link to="/contact" onClick={toggleMenu}>Contact</Link>
                         </li>
                     </ul>
