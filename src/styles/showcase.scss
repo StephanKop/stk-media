@@ -1,9 +1,12 @@
 .showcaseContainer {
-  width: 100%;
+  width: 95%;
   height: 50em;
   background-size: 100% auto;
   background-repeat: no-repeat;
   transition: all 1s ease;
+  border-radius: 30px;
+  margin: 5em auto;
+  box-shadow: 5px 5px 10px -1px rgba(173,173,173,0.5);
   &:hover {
     background-size: 110% auto;
     @media (max-width: $mobile) {
@@ -14,6 +17,8 @@
     background-position: center;
     height: 50vh;
     background-size: auto 100%;
+    width: 90%;
+    margin: 3em auto;
   }
   &__text {
     width: 30%;

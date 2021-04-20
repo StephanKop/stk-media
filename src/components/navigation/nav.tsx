@@ -12,6 +12,7 @@ import Frontend from "../pages/pageFrontend";
 import Design from "../pages/pageWebDesign";
 import UX from "../pages/pageUX";
 import Contact from "../pages/pageContact";
+import About from "../pages/pageAbout";
 
 const Nav = () => {
     const windowWidth = window.innerWidth;
@@ -22,7 +23,7 @@ const Nav = () => {
                 <Burger/>
             )}
             {!isMobile && (
-            <div className={'navContainer'}>
+            <header className={'navContainer'}>
                 <nav className={'navContainer__nav'}>
                     <Link to={'/'}>
                         <h1>STK<span>Media</span></h1>
@@ -38,11 +39,14 @@ const Nav = () => {
                             <NavLink to="/ux" activeClassName='is-active'>UX</NavLink>
                         </li>
                         <li>
+                            <NavLink to="/over" activeClassName='is-active'>Over</NavLink>
+                        </li>
+                        <li>
                             <NavLink to="/contact" activeClassName='is-active'>Contact</NavLink>
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </header>
             )}
             <Switch>
                 <Route exact path="/" component={Home}/>
@@ -50,6 +54,7 @@ const Nav = () => {
                 <Route path="/webdesign" component={Design}/>
                 <Route path="/ux" component={UX}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/over" component={About}/>
                 <Route component={Home}/>
             </Switch>
         </Router>
