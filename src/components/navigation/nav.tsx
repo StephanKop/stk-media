@@ -13,6 +13,7 @@ import Design from "../pages/pageWebDesign";
 import UX from "../pages/pageUX";
 import Contact from "../pages/pageContact";
 import About from "../pages/pageAbout";
+import Project from "../pages/pageProject";
 
 const Nav = () => {
     const windowWidth = window.innerWidth;
@@ -55,6 +56,7 @@ const Nav = () => {
                 <Route path="/ux" component={UX}/>
                 <Route path="/contact" component={Contact}/>
                 <Route path="/over" component={About}/>
+                <Route path="/projects/:project" component={Project}/>
                 <Route component={Home}/>
             </Switch>
         </Router>

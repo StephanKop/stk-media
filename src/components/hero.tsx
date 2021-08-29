@@ -18,7 +18,8 @@ const Hero = ( props: any ) => {
 
     useEffect(() => {
         typeWriter();
-    })
+    }, [])
+
     return (
         <div className={'heroContainer'} style={{backgroundImage: `url(${props.backgroundImage})`}}>
         <div className={'heroContainer__hero'}>
